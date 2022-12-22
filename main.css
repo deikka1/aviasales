@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #4A4A4A;
+    font-family: 'Open Sans';
+}
+body{
+    background-color: #F1FCFF;
+}
+.svg{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.sorting{
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.sorting p{
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #fff;
+  margin: 20px;
+}
+.form label{
+    background-color: #fff;
+}
+.checkbox_input{
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+.checkbox_label{
+    position: relative;
+    padding-left: 30px;
+}
+.checkbox_label::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9ABBCE;
+    border-radius: 2px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.checkbox_label::after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: url(img/check.png);
+    background-size: 12px 8px;
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    z-index: 2;
+    opacity: 0;
+}
+.checkbox_input:checked + .checkbox_label::after{
+    opacity: 1;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.form_input{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+}
+.form_input:hover{
+    background-color: #F1FCFF;
+}
+.form_input:hover label{
+    background-color: #F1FCFF;
+}
+.switches{
+    display: flex;
+}
+.btn{
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.btn div{
+    padding: 15px 30px;
+    border: 1px solid #DFE5EC;
+    transition: 0.5s;
+    background-color: #fff;
+}
+.btn div:hover{
+    border: 1px solid #2196F3;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ticket_head{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 0 25px;
+}
+.ticket{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.t1{
+   color: #A0B0B9;
+   font-size: 16px;
+   font-weight: 600;
+}
+.t2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.ticket_rows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.ticket_row{
+    display: flex;
+}
+.ticket_row div{
+    padding: 10px;
+}
+.pad{
+    margin-left: 100px;
+    margin-right: 130px;
+}
+.prise{
+    color: #2196F3;
+    font-weight: 600;
+    font-size: 32px;
+}
+.button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 5px;
+}
